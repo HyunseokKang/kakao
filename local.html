@@ -2,7 +2,7 @@
     <head>
         <title>지역검색</title>
         <link rel="stylesheet" href="style.css"/>
-        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
         <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=61c5420e747e8c27a07998090360dfa5"></script>
     </head>
@@ -72,7 +72,6 @@
 			    level: 3
 		    };
 		    var map = new kakao.maps.Map(container, options);
-            
             var str ="<div style='padding:5px;color:blue;'>";
                 str+=$(this).attr("place") + "<br>";
                 str+="<b>Tel:"+$(this).attr("phone")+"</b>";
